@@ -1,0 +1,61 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/web-broker?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC"
+    username: "root"
+    password: "root"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+    open-in-view: true
+  sql:
+    init:
+      mode: never
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  active:
+    profile: dev
+  devtools:
+    restart:
+      additional-paths: file:src/main/resources/static/
+  application:
+    name: webbroker
+  cloud:
+    vault:
+      uri: http://127.0.0.1:8200
+      token: '00000000-0000-0000-0000-000000000000'
+      kv:
+        enabled: true
+  logging:
+    level:
+      org.hibernate.SQL: DEBUG
+      org.hibernate.orm.jdbc.bind: TRACE
+      org.springframework.security: DEBUG
+  server:
+    error:
+      whitelabel:
+        enabled: true
+  config:
+    import: vault://
+  thymeleaf: # Thymeleaf
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    prefix: file:src/main/resources/templates/
+  web:
+    resources:
+      static-locations: file:src/main/resources/static/
+  resources: # Static resources
+    static-locations: file:src/main/resources/static/
+    cache:
+      period: 0
+
+
+

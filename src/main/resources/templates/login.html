@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body style="background-image: url(/images/background.jpg);">
+
+
+    <div class="flex-center" style="min-height: calc(100vh - 2.7rem);">
+
+        <form th:action="@{/login}" th:method="POST"
+              class="login-form">
+            
+            <span th:if="${badCredentials}" class="error"
+                  th:text="'Invalid username and/or password'">>Error message</span>
+            <div class="flex-center">
+                <p style="font-size: 28px;">LOGIN</p>
+            </div>
+
+            <div>
+                <div>
+                    <label for="inputUsername">Username: </label>
+                </div>
+                <div>
+                    <input th:value="username" type="text" id="inputUsername" name="username"
+                            required minlength="4" maxlength="20" aria-describedby="usernameHelpInline">
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label for="inputPassword">Password: </label>
+                </div>
+                <div>
+                    <input th:value="password" type="password" id="inputPassword" name="password"
+                           required minlength="4" maxlength="20" aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="my-button"> Login </button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div th:replace="~{fragments/footer}"></div>
+
+</body>
+</html>

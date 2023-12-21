@@ -1,0 +1,204 @@
+html {
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+label,
+input {
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: beige;
+}
+
+.login-form label {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navigation ul {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid black;
+}
+
+.navigation .title {
+    width: 98%;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+#home-main {
+    display: flex;
+    padding: 16px;
+}
+#home-main label {
+    font-size: 24px;
+    font-weight: 600;
+}
+.phone-appointments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    gap: 80px;
+    border: 1px solid black;
+    height: 740px;
+}
+
+.phone-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 400px;
+    height: 120px;
+    gap: 8px;
+}
+
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    gap: 8px;
+}
+
+.appointment {
+    width: 320px;
+    padding: 12px;
+    border: 1px solid black;
+}
+
+.search-view {
+    border: 1px solid black;
+    width: calc(100vw - 516px);
+}
+
+.search-form-wrap {
+    display: flex;
+    justify-content: center;
+    width: 824px;
+    height: 60px;
+}
+
+.offer-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid black
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.my-button {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.my-button:hover,
+.my-button:focus {
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.my-button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.my-button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}

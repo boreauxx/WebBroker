@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/08dd69db75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div th:replace="~{fragments/navigation}"></div>
+
+    <main id="home-main">
+        <div style="padding:20px;">
+            <div class="phone-appointments">
+
+                <div class="phone-search">
+                    <form action="" method="" style="display:flex; flex-direction: column; gap: 8px;">
+                        <div>
+                            <label for="inputPhoneNumber">Search by phone number</label>
+                        </div>
+                        <div>
+                            <input type="text" name="phoneNumber" id="inputPhoneNumber" style="width: 273px;">
+                        </div>
+                        <div class="flex-center">
+                            <button type="submit" class="my-button">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="appointments-list">
+                    <div>
+                        <label class="flex-center">Appointments:</label>
+                    </div>
+                    <div class="appointment">
+                        <p>Offer -> </p>
+                        <p>Address -></p>
+                        <p>Date and Time -> </p>
+                        <p>Tenant -> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding:20px;">
+
+            <div class="search-view">
+                <div class="flex-center" style="height: 200px; border-bottom: 1px solid black">
+                    <form action="" method="">
+                        <div class="search-form-wrap">
+                            <div>
+                                <div class="flex-center">
+                                    <label for="inputArea">Area:</label>
+                                </div>
+                                <div class="flex-center">
+                                    <input type="text" name="area" id="inputArea">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-center">
+                                    <label for="inputPriceFrom">Price from</label>
+                                </div>
+                                <div class="flex-center">
+                                    <input type="text" name="inputFrom" id="inputPriceFrom">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-center">
+                                    <label for="inputPriceTo">Price to</label>
+                                </div>
+                                <div class="flex-center">
+                                    <input type="text" name="" id="inputPriceTo">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-center">
+                                    <label for="inputType">Type</label>
+                                </div>
+                                <div class="flex-center">
+                                    <input type="text" name="type" id="inputType">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-center">
+                            <button type="submit" class="my-button">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="results">
+                    <div class="offer-wrap">
+                        <div class="offer">
+                            <p>Offer type -></p>
+                            <p>Offer price -></p>
+                            <p>Offer address -></p>
+                            <p>Offer area -></p>
+                            <p>Offer postdate -></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div class="offer-buttons">
+                            <div class="flex-center">
+                                <button class="my-button">Call</button>
+                            </div>
+                            <div class="flex-center">
+                                <button class="my-button">Update</button>
+                            </div>
+                            <div class="flex-center">
+                                <button class="my-button">Appoint</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div th:replace="~{fragments/footer}"></div>
+</body>
+
+</html>
